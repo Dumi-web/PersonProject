@@ -16,17 +16,17 @@ public class Person {
 
     public String hello() {
         String results = " ";
-        for (String a : interest) {
+        for (String output : interest) {
 
-            if (a == interest[interest.length - 1]) {
-                results += "and " + a;
+            if (output == interest[interest.length - 1]) {
+                results += "and " + output;
 
             }
-            else if(a==interest[interest.length -2]){
-                results += a+ " ";
+            else if(output ==interest[interest.length -2]){
+                results += output+ " ";
 
             } else {
-                results += a + ", ";
+                results += output + ", ";
             }
         }
     return "Hello " + "my name is " + name + " and " + "I am " + age + " years old" + ". " + "My interests are"+results;
